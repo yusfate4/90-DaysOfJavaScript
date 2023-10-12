@@ -29,18 +29,10 @@ For instance:
 
 </html>
 ```
-You can run the example by clicking the “Play” button in the right-top corner of the box above.
 
-The <script> tag contains JavaScript code which is automatically executed when the browser processes the tag.
 
-Modern markup
-The <script> tag has a few attributes that are rarely used nowadays but can still be found in old code:
+### You can run the example by clicking the “Play” button in the right-top corner of the box above.
 
-The type attribute: <script type=…>
-The old HTML standard, HTML4, required a script to have a type. Usually it was type="text/javascript". It’s not required anymore. Also, the modern HTML standard totally changed the meaning of this attribute. Now, it can be used for JavaScript modules. But that’s an advanced topic, we’ll talk about modules in another part of the tutorial.
-
-The language attribute: <script language=…>
-This attribute was meant to show the language of the script. This attribute no longer makes sense because JavaScript is the default language. There is no need to use it.
 
 
 ![Day01](https://github.com/yusfate4/90-DaysOfJavaScript/assets/65573250/826286cd-c119-4239-ae9c-d7db308e4510)
