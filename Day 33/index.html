@@ -1,11 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <p>A paragraph</p>
+    <div>A div</div>
+    <script>
+      let elem = document.body;
 
-let elem = document.body;
+      // let's examine: what type of node is in elem?
+      console.log(elem.nodeType); // 1 => element
 
-  // let's examine: what type of node is in elem?
-  console.log(elem.nodeType); // 1 => element
+      // and its first child is...
+      console.log(elem.firstChild.nodeType); // 3 => text
 
-  // and its first child is...
-  console.log(elem.firstChild.nodeType); // 3 => text
+      // for the document object, the type is 9
+      console.log(document.nodeType);
 
-  // for the document object, the type is 9
-  console.log( document.nodeType ); 
+      console.log(document.body.nodeName);
+      console.log(document.body.tagName);
+
+      console.log(document.body.innerHTML);
+      document.body.innerHTML = "The new BODY!";
+    </script>
+  </body>
+</html>
