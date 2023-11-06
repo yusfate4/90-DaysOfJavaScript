@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <ol id="ol">
+      <li>0</li>
+      <li>1</li>
+      <li>2</li>
+    </ol>
+    <div class="alert" id="div">
+      <strong>Hi there!</strong> You've read an important message.
+    </div>
+    <div id="div"></div>
+    <style>
+      .alert {
+        padding: 15px;
+        border: 1px solid #d6e9c6;
+        border-radius: 4px;
+        color: #3c763d;
+        background-color: #dff0d8;
+      }
+    </style>
+
+    <div class="alert">
+      <strong>Hi there!</strong> You've read an important message.
+    </div>
+    <script>
+      let div2 = div.cloneNode(true); // clone the message
+      div2.querySelector("strong").innerHTML = "Bye there!"; // change the clone
+
+      div.after(div2);
+      //   div.insertAdjacentHTML("beforebegin", "<p>Hello</p>");
+      //   div.insertAdjacentHTML("afterend", "<p>Bye</p>");
+
+      //   let div = document.createElement("div");
+      //   div.className = "alert";
+      //   div.innerHTML =
+      //     "<strong>Hi there!</strong> You've read an important message to read.";
+      //   document.body.append(div);
+      //   ol.before("before now");
+      //   ol.after("after now");
+
+      //   let liFirst = document.createElement("li");
+      //   liFirst.innerHTML = "prepend here";
+      //   ol.before(liFirst);
+
+      //   let liLast = document.createElement("li");
+      //   liLast.innerHTML = "append here";
+      //   ol.append(liLast);
+
+      //   let div = document.createElement("div");
+      //   div.className = "alert";
+      //   div.innerHTML =
+      //     "<strong>Hi there!</strong> You've read an important message.";
+
+      //   document.body.append(div);
+      //   setTimeout(() => div.remove(), 1000);
+    </script>
+  </body>
+</html>
